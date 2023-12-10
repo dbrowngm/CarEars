@@ -25,6 +25,8 @@ while True:
     if not output_on:
         # Turn on the output
         GPIO.output(output_channel, GPIO.HIGH)
+        output_on = True
     else:
         # Turn off the output
         GPIO.output(output_channel, GPIO.LOW)
+        output_on = False
